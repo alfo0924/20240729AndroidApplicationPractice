@@ -50,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
     i.setAction(Intent.ACTION_DIAL);
     i.setData(Uri.parse("tel:+12345"));
     startActivity(i);
-
     }
 
 }
