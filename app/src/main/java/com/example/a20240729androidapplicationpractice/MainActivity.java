@@ -31,6 +31,12 @@ public class MainActivity extends AppCompatActivity {
         i.setData(Uri.parse("https://www.fcu.edu.tw"));
         startActivity(i);
     }
+    public void GotoFCU(View view)
+    {
+        Intent i =new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse("geo:24.179282618087722, 120.64644035616014"));
+        startActivity(i);
+    }
 
 
 }
