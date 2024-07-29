@@ -35,9 +35,11 @@ public class MainActivity extends AppCompatActivity {
     {
         Intent i =new Intent(Intent.ACTION_VIEW);
         Intent iq=new Intent(Intent.ACTION_VIEW);
+        Intent iqe=new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse("geo:0,0?q=FCU"));
         iq.setData(Uri.parse("geo:24.178970533916186, 120.64653643203295?q=7-11"));
-        startActivity(iq);
+        iqe.setData(Uri.parse("geo:25.0,121.5?q=tesla supercharger"));
+        startActivity(iqe);
     }
     public void clickDIAL(View view)
     {
