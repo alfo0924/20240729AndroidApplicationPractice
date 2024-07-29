@@ -1,6 +1,9 @@
 package com.example.a20240729androidapplicationpractice;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,4 +24,13 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
     }
+    public void FcuIndexPage(View view)
+    {
+        Intent i =new Intent();
+        i.setAction(Intent.ACTION_VIEW);
+        i.setData(Uri.parse("https://www.fcu.edu.tw"));
+        startActivity(i);
+    }
+
+
 }
