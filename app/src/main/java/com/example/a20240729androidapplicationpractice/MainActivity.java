@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
     }
+    //Function to direct to Fcu Page
     public void FcuIndexPage(View view)
     {
         Intent i =new Intent();
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         i.setData(Uri.parse("https://www.fcu.edu.tw"));
         startActivity(i);
     }
+    //Function to direct to FCU Google Map
     public void GotoFCU(View view)
     {
         Intent i =new Intent(Intent.ACTION_VIEW);
@@ -41,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         iqe.setData(Uri.parse("geo:25.0,121.5?q=tesla supercharger"));
         startActivity(iqe);
     }
+    //Function to direct to Dial
     public void clickDIAL(View view)
     {
     Intent i =new Intent();
